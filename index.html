@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convention Center</title>
+  <!-- Bootstrap CDN added -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- custom css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg container">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Abacus Convention Center</a>
+
+        <ul class="navbar-nav d-flex flex-row gap-3"> <!-- QUESTION gap vs gx / gy -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Subscribe</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger nav menu button option start -->
+
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+
+        <!-- Hamburger nav menu button option end -->
+
+        <!-- Hamburger nav menu button Expanding option start -->
+
+        <!-- <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div> -->
+
+        <!-- Hamburger nav menu button Expanding option end -->
+
+      </div>
+    </nav>
+
+    <!-- Carousel Start -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+          <!-- Carousel Caption - Need to move it center position -->
+          <!-- Carousel Caption - removing while responsive -->
+          <div class="carousel-caption d-md-block py-5 my-5">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the First slide.</p>
+            <!-- btn color change question -->
+            <button class="btn btn-primary">Book now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the Second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the Third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel End-->
+
+  </header>
+
+  <main>
+    <!-- Moment section start -->
+    <section>
+      <div class="container my-5">
+        <div class="row d-flex flex-row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="images/wedding.png" alt="">
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <h1>Every moment is Precious </h1>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+            <button class="btn btn-primary">Explore Our Album</button>
+          </div>
+          <!-- toast div - large screen a body full-->
+          <div class="toast fade show" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="toast-header">
+              <!-- NO NEED -->
+              <!-- <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg> -->
+              <!-- <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small> -->
+
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Moment section end -->
+
+    <!-- package section start -->
+    <section class="my-5">
+      <h1 class="text-center">Our Package</h1>
+      <!-- group card or not -->
+      <!-- card group bootstrap -->
+      <div class="card-group container">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">$300</h3>
+            <h3 class="card-subtitle mb-2">Business fair</h3>
+            <p class="card-text">For most businesses event like book fair, craft fair.</p>
+            <ul>
+              <li>text 1</li>
+              <li>text 2</li>
+              <li>text 3</li>
+              <li>text 4</li>
+            </ul>
+            <button class="btn btn-primary">Choose plan</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">$300</h3>
+            <h3 class="card-subtitle mb-2">Business fair</h3>
+            <p class="card-text">For most businesses event like book fair, craft fair.</p>
+            <ul>
+              <li>text 1</li>
+              <li>text 2</li>
+              <li>text 3</li>
+              <li>text 4</li>
+            </ul>
+            <button class="btn btn-primary">Choose plan</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">$300</h3>
+            <h3 class="card-subtitle mb-2">Business fair</h3>
+            <p class="card-text">For most businesses event like book fair, craft fair.</p>
+            <ul>
+              <li>text 1</li>
+              <li>text 2</li>
+              <li>text 3</li>
+              <li>text 4</li>
+            </ul>
+            <button class="btn btn-primary">Choose plan</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">$300</h3>
+            <h3 class="card-subtitle mb-2">Business fair</h3>
+            <p class="card-text">For most businesses event like book fair, craft fair.</p>
+            <ul>
+              <li>text 1</li>
+              <li>text 2</li>
+              <li>text 3</li>
+              <li>text 4</li>
+            </ul>
+            <button class="btn btn-primary">Choose plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- package section end -->
+  </main>
+
+  <footer>
+
+  </footer>
+  <!-- JS CDN added -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
