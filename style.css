@@ -57,6 +57,20 @@ li{
     font-weight: 700;
     border-radius: 20px;
 }
+.acc-accordion{
+    margin-bottom: 20px;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+.acc-footer-container{
+    padding-top: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-width:992px) {
     .acc-toast {
         text-align: center;
