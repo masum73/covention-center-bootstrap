@@ -21,6 +21,11 @@ ul{
 li{
     list-style: none;
 }
+.acc-clients{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+}
+
 .card{
     border: none !important;
 }
