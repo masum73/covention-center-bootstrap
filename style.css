@@ -1,0 +1,8 @@
+
+/* nav bar responsive media query */
+
+@media screen and (max-width:991px) {
+    .navbar-collapse {
+       
+    }
+} 
