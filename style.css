@@ -63,7 +63,7 @@ li{
 footer{
     background-color: black;
     color: white;
-    height: 300px;
+    /* height: 300px; */
 }
 .acc-footer-container{
     padding-top: 150px;
