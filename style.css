@@ -63,13 +63,12 @@ li{
 footer{
     background-color: black;
     color: white;
-    /* height: 300px; */
 }
-.acc-footer-container{
-    padding-top: 150px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+.footer-image-container{
+    margin-bottom: 10% !important;
+}
+.footer-image{
+    margin-left: 40% !important;
 }
 @media screen and (max-width:992px) {
     .acc-toast {
